@@ -41,7 +41,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Llt-xl-gaF">
                                 <rect key="frame" x="94.5" y="382" width="225" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="225" id="Uws-8S-lrA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="225" id="Uws-8S-lrA"/>
                                     <constraint firstAttribute="height" constant="30" id="gCl-rx-L0e"/>
                                 </constraints>
                                 <nil key="textColor"/>
@@ -51,7 +51,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Ve-t2-Yuw">
                                 <rect key="frame" x="94.5" y="420" width="225" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="225" id="Rvy-0Y-nDo"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="225" id="Rvy-0Y-nDo"/>
                                     <constraint firstAttribute="height" constant="30" id="Tqm-bb-0OK"/>
                                 </constraints>
                                 <nil key="textColor"/>
@@ -63,7 +63,7 @@
                                 <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="YLB-pE-zv1"/>
-                                    <constraint firstAttribute="width" constant="225" id="ol8-pW-JMu"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="225" id="ol8-pW-JMu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                 <state key="normal" title="Login">
@@ -74,7 +74,7 @@
                                 <rect key="frame" x="94.5" y="504" width="225" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="pUs-8o-9yp"/>
-                                    <constraint firstAttribute="width" constant="225" id="ySS-Jn-iDa"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="225" id="ySS-Jn-iDa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                 <size key="titleShadowOffset" width="2" height="1"/>
@@ -82,6 +82,9 @@
                                     <color key="titleColor" red="0.3426754286" green="0.82271082770000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f5N-ey-Qrm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -105,6 +108,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="d3L-3n-XYz" kind="show" identifier="GoRegister" id="2Fm-UI-VA0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -123,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MAE-pz-uo2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="868" y="134"/>
+            <point key="canvasLocation" x="1103" y="134"/>
         </scene>
     </scenes>
     <resources>
