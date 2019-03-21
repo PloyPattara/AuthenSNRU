@@ -12,22 +12,12 @@ class RegisterViewController: UIViewController {
     
     //My Outlet
     @IBOutlet weak var nameTextField: UITextField!
-    
-    
     @IBOutlet weak var userTextField: UITextField!
-    
-    
     @IBOutlet weak var passwordTextField: UITextField!
-    
-    
     
     // End Outlet
     
     
-    
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,11 +29,14 @@ class RegisterViewController: UIViewController {
     @IBAction func uploadButton(_ sender: UIBarButtonItem) {
         
         print("You Click Upload")
-        let name = nameTextField.text!
         
+        let name = nameTextField.text!
+        let user = userTextField.text!
+        let password = passwordTextField.text!
         
         print("name =\(name)")
-        
+        print("user =\(user)")
+        print("password =\(password)")
     }
     
     
